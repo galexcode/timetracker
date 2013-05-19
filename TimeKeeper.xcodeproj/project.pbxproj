@@ -1,0 +1,468 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3FF199C017493905002305DB /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FF199BF17493904002305DB /* Cocoa.framework */; };
+		3FF199CA17493905002305DB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3FF199C817493905002305DB /* InfoPlist.strings */; };
+		3FF199CC17493905002305DB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FF199CB17493905002305DB /* main.m */; };
+		3FF199D017493905002305DB /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 3FF199CE17493905002305DB /* Credits.rtf */; };
+		3FF199D317493905002305DB /* ctkAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FF199D217493905002305DB /* ctkAppDelegate.m */; };
+		3FF199D617493905002305DB /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3FF199D417493905002305DB /* MainMenu.xib */; };
+		3FF199DE17493905002305DB /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FF199DD17493905002305DB /* SenTestingKit.framework */; };
+		3FF199DF17493905002305DB /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FF199BF17493904002305DB /* Cocoa.framework */; };
+		3FF199E717493905002305DB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3FF199E517493905002305DB /* InfoPlist.strings */; };
+		3FF199EA17493905002305DB /* TimeKeeperTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FF199E917493905002305DB /* TimeKeeperTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3FF199E017493905002305DB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3FF199B417493904002305DB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3FF199BB17493904002305DB;
+			remoteInfo = TimeKeeper;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3FF199BC17493904002305DB /* TimeKeeper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimeKeeper.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FF199BF17493904002305DB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		3FF199C217493905002305DB /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		3FF199C317493905002305DB /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		3FF199C417493905002305DB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		3FF199C717493905002305DB /* TimeKeeper-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TimeKeeper-Info.plist"; sourceTree = "<group>"; };
+		3FF199C917493905002305DB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		3FF199CB17493905002305DB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3FF199CD17493905002305DB /* TimeKeeper-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TimeKeeper-Prefix.pch"; sourceTree = "<group>"; };
+		3FF199CF17493905002305DB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		3FF199D117493905002305DB /* ctkAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ctkAppDelegate.h; sourceTree = "<group>"; };
+		3FF199D217493905002305DB /* ctkAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ctkAppDelegate.m; sourceTree = "<group>"; };
+		3FF199D517493905002305DB /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		3FF199DC17493905002305DB /* TimeKeeperTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TimeKeeperTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FF199DD17493905002305DB /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		3FF199E417493905002305DB /* TimeKeeperTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TimeKeeperTests-Info.plist"; sourceTree = "<group>"; };
+		3FF199E617493905002305DB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		3FF199E817493905002305DB /* TimeKeeperTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TimeKeeperTests.h; sourceTree = "<group>"; };
+		3FF199E917493905002305DB /* TimeKeeperTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TimeKeeperTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3FF199B917493904002305DB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FF199C017493905002305DB /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FF199D817493905002305DB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FF199DE17493905002305DB /* SenTestingKit.framework in Frameworks */,
+				3FF199DF17493905002305DB /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3FF199B317493904002305DB = {
+			isa = PBXGroup;
+			children = (
+				3FF199C517493905002305DB /* TimeKeeper */,
+				3FF199E217493905002305DB /* TimeKeeperTests */,
+				3FF199BE17493904002305DB /* Frameworks */,
+				3FF199BD17493904002305DB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3FF199BD17493904002305DB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3FF199BC17493904002305DB /* TimeKeeper.app */,
+				3FF199DC17493905002305DB /* TimeKeeperTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3FF199BE17493904002305DB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3FF199BF17493904002305DB /* Cocoa.framework */,
+				3FF199DD17493905002305DB /* SenTestingKit.framework */,
+				3FF199C117493905002305DB /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3FF199C117493905002305DB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3FF199C217493905002305DB /* AppKit.framework */,
+				3FF199C317493905002305DB /* CoreData.framework */,
+				3FF199C417493905002305DB /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		3FF199C517493905002305DB /* TimeKeeper */ = {
+			isa = PBXGroup;
+			children = (
+				3FF199D117493905002305DB /* ctkAppDelegate.h */,
+				3FF199D217493905002305DB /* ctkAppDelegate.m */,
+				3FF199D417493905002305DB /* MainMenu.xib */,
+				3FF199C617493905002305DB /* Supporting Files */,
+			);
+			path = TimeKeeper;
+			sourceTree = "<group>";
+		};
+		3FF199C617493905002305DB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3FF199C717493905002305DB /* TimeKeeper-Info.plist */,
+				3FF199C817493905002305DB /* InfoPlist.strings */,
+				3FF199CB17493905002305DB /* main.m */,
+				3FF199CD17493905002305DB /* TimeKeeper-Prefix.pch */,
+				3FF199CE17493905002305DB /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3FF199E217493905002305DB /* TimeKeeperTests */ = {
+			isa = PBXGroup;
+			children = (
+				3FF199E817493905002305DB /* TimeKeeperTests.h */,
+				3FF199E917493905002305DB /* TimeKeeperTests.m */,
+				3FF199E317493905002305DB /* Supporting Files */,
+			);
+			path = TimeKeeperTests;
+			sourceTree = "<group>";
+		};
+		3FF199E317493905002305DB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3FF199E417493905002305DB /* TimeKeeperTests-Info.plist */,
+				3FF199E517493905002305DB /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3FF199BB17493904002305DB /* TimeKeeper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3FF199ED17493905002305DB /* Build configuration list for PBXNativeTarget "TimeKeeper" */;
+			buildPhases = (
+				3FF199B817493904002305DB /* Sources */,
+				3FF199B917493904002305DB /* Frameworks */,
+				3FF199BA17493904002305DB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TimeKeeper;
+			productName = TimeKeeper;
+			productReference = 3FF199BC17493904002305DB /* TimeKeeper.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3FF199DB17493905002305DB /* TimeKeeperTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3FF199F017493905002305DB /* Build configuration list for PBXNativeTarget "TimeKeeperTests" */;
+			buildPhases = (
+				3FF199D717493905002305DB /* Sources */,
+				3FF199D817493905002305DB /* Frameworks */,
+				3FF199D917493905002305DB /* Resources */,
+				3FF199DA17493905002305DB /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3FF199E117493905002305DB /* PBXTargetDependency */,
+			);
+			name = TimeKeeperTests;
+			productName = TimeKeeperTests;
+			productReference = 3FF199DC17493905002305DB /* TimeKeeperTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3FF199B417493904002305DB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = ctk;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Philip Clifton";
+			};
+			buildConfigurationList = 3FF199B717493904002305DB /* Build configuration list for PBXProject "TimeKeeper" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 3FF199B317493904002305DB;
+			productRefGroup = 3FF199BD17493904002305DB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3FF199BB17493904002305DB /* TimeKeeper */,
+				3FF199DB17493905002305DB /* TimeKeeperTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3FF199BA17493904002305DB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FF199CA17493905002305DB /* InfoPlist.strings in Resources */,
+				3FF199D017493905002305DB /* Credits.rtf in Resources */,
+				3FF199D617493905002305DB /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FF199D917493905002305DB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FF199E717493905002305DB /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3FF199DA17493905002305DB /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3FF199B817493904002305DB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FF199CC17493905002305DB /* main.m in Sources */,
+				3FF199D317493905002305DB /* ctkAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FF199D717493905002305DB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FF199EA17493905002305DB /* TimeKeeperTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3FF199E117493905002305DB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3FF199BB17493904002305DB /* TimeKeeper */;
+			targetProxy = 3FF199E017493905002305DB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3FF199C817493905002305DB /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3FF199C917493905002305DB /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		3FF199CE17493905002305DB /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3FF199CF17493905002305DB /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		3FF199D417493905002305DB /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3FF199D517493905002305DB /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		3FF199E517493905002305DB /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3FF199E617493905002305DB /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3FF199EB17493905002305DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		3FF199EC17493905002305DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		3FF199EE17493905002305DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TimeKeeper/TimeKeeper-Prefix.pch";
+				INFOPLIST_FILE = "TimeKeeper/TimeKeeper-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		3FF199EF17493905002305DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TimeKeeper/TimeKeeper-Prefix.pch";
+				INFOPLIST_FILE = "TimeKeeper/TimeKeeper-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		3FF199F117493905002305DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TimeKeeper.app/Contents/MacOS/TimeKeeper";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = "\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TimeKeeper/TimeKeeper-Prefix.pch";
+				INFOPLIST_FILE = "TimeKeeperTests/TimeKeeperTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		3FF199F217493905002305DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TimeKeeper.app/Contents/MacOS/TimeKeeper";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = "\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TimeKeeper/TimeKeeper-Prefix.pch";
+				INFOPLIST_FILE = "TimeKeeperTests/TimeKeeperTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3FF199B717493904002305DB /* Build configuration list for PBXProject "TimeKeeper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3FF199EB17493905002305DB /* Debug */,
+				3FF199EC17493905002305DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3FF199ED17493905002305DB /* Build configuration list for PBXNativeTarget "TimeKeeper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3FF199EE17493905002305DB /* Debug */,
+				3FF199EF17493905002305DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		3FF199F017493905002305DB /* Build configuration list for PBXNativeTarget "TimeKeeperTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3FF199F117493905002305DB /* Debug */,
+				3FF199F217493905002305DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3FF199B417493904002305DB /* Project object */;
+}
