@@ -13,10 +13,23 @@
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
+    // Create Dropdown User List
+    NSArray *users = [ctkDataApi makeUserRequest];
+    [_userPopupList removeAllItems];
+    
+    for (NSDictionary *user in users) {
+        NSString *username = [user objectForKey:@"name"];
+        [_userPopupList addItemWithTitle:username];
+    }
+    
     // Create Dropdown Project List
     NSArray *projects = [ctkDataApi makeProjectsRequest];
     [_projectPopupList removeAllItems];
-    [_projectPopupList addItemsWithTitles:projects];
+    
+    for (NSDictionary *item in projects) {
+        NSString *projectName = [item objectForKey:@"name"];
+        [_projectPopupList addItemWithTitle:projectName];
+    }
 }
 
 
@@ -40,6 +53,8 @@
 
 - (IBAction)onStartPress:(id)sender {
     self.startDate = [NSDate date];
+    
+    self.postSent.stringValue = [NSString stringWithFormat:@""];
     
     // Disable start button & Enable Stop Button
     self.startTimerButton.enabled = NO;
@@ -73,5 +88,37 @@
 ////////////////////////////////////////////////////////////////////////
 - (IBAction)postTiming:(id)sender {
     
+    NSString *timer = self.lastRecordedTimer.stringValue;
+    NSString *project = self.projectPopupList.titleOfSelectedItem;
+    NSString *account = self.userPopupList.titleOfSelectedItem;
+    
+    NSString *post = [NSString stringWithFormat:@"username=%@&project=%@&hours=%@&role_id=4",account,project,timer];
+    NSData *postData = [post dataUsingEncoding:NSASCIIStringEncoding allowLossyConversion:YES];
+    
+    NSString *postLength = [NSString stringWithFormat:@"%ld", (unsigned long)[postData length]];
+    
+    NSMutableURLRequest *request = [[NSMutableURLRequest alloc] init];
+    [request setURL:[NSURL URLWithString:@"http://local.timesheets/index.php/api/add_project_time"]];
+    [request setHTTPMethod:@"POST"];
+    [request setValue:postLength forHTTPHeaderField:@"Content-Length"];
+    [request setValue:@"application/x-www-form-urlencoded" forHTTPHeaderField:@"Content-Type"];
+    [request setHTTPBody:postData];
+    
+    NSData *returnData = [NSURLConnection sendSynchronousRequest:request returningResponse:nil error:nil];
+    
+    
+    NSDictionary* json = [NSJSONSerialization
+                          JSONObjectWithData:returnData
+                          options:kNilOptions
+                          error:Nil];
+
+//    NSLog(@"users=%@", [[NSString alloc] initWithData:returnData encoding:NSUTF8StringEncoding]);
+
+    
+//    NSString *success = [json objectForKey:@"success"];
+//    NSString *match = [[NSString alloc] initWithFormat:@"1"];
+
+    self.postSent.stringValue = [NSString stringWithFormat:@"Post Sent"];
+
 }
 @end

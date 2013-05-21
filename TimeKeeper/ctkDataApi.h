@@ -9,13 +9,16 @@
 #import <Foundation/Foundation.h>
 
 @interface ctkDataApi : NSObject
-{
-    // Settings
-    NSString *requestUrl;
-    
-    void *projectData;
-}
+
+
+// Settings
++(NSString*)requestUrl;
+
+// Data
++(NSArray*)projectData;
+
 +(NSArray*)makeProjectsRequest;
++(NSArray*)makeUserRequest;
 +(bool)submitProjectTiming;
 
 @end

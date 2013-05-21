@@ -10,8 +10,11 @@
 
 @interface ctkAppDelegate : NSObject <NSApplicationDelegate>
 
+@property (weak) IBOutlet NSScrollView *timeTable;
+
 // Popuplist Function
 @property (weak) IBOutlet NSPopUpButton *projectPopupList;
+@property (weak) IBOutlet NSPopUpButton *userPopupList;
 
 // Timer Fuctions
 @property (strong) IBOutlet NSTextField *stopwatchLabel;
@@ -22,6 +25,7 @@
 @property (weak) IBOutlet NSTextField *lastRecordedTimer;
 @property (weak) IBOutlet NSButton *startTimerButton;
 @property (weak) IBOutlet NSButton *stopTimerButton;
+@property (weak) IBOutlet NSTextFieldCell *postSent;
 
 // Timer Submit
 - (IBAction)postTiming:(id)sender;

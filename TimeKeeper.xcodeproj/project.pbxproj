@@ -18,6 +18,7 @@
 		3FF199E717493905002305DB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3FF199E517493905002305DB /* InfoPlist.strings */; };
 		3FF199EA17493905002305DB /* TimeKeeperTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FF199E917493905002305DB /* TimeKeeperTests.m */; };
 		3FF19A00174954D7002305DB /* ctkDataApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FF199FF174954D7002305DB /* ctkDataApi.m */; };
+		3FF19A03174A9EB3002305DB /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FF199C317493905002305DB /* CoreData.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3FF19A03174A9EB3002305DB /* CoreData.framework in Frameworks */,
 				3FF199C017493905002305DB /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -459,6 +461,7 @@
 				3FF199EF17493905002305DB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3FF199F017493905002305DB /* Build configuration list for PBXNativeTarget "TimeKeeperTests" */ = {
 			isa = XCConfigurationList;
@@ -467,6 +470,7 @@
 				3FF199F217493905002305DB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
