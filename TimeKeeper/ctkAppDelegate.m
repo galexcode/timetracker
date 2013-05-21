@@ -98,7 +98,9 @@
     NSString *postLength = [NSString stringWithFormat:@"%ld", (unsigned long)[postData length]];
     
     NSMutableURLRequest *request = [[NSMutableURLRequest alloc] init];
-    [request setURL:[NSURL URLWithString:@"http://local.timesheets/index.php/api/add_project_time"]];
+    NSString *authValue = @"Basic Y2hhbWVsZW9uOnNEZD9ve1U7Z15rJg==";
+    [request setValue:authValue forHTTPHeaderField:@"Authorization"];
+    [request setURL:[NSURL URLWithString:@"http://timesheets.chameleonstudios.co.uk/index.php/api/add_project_time"]];
     [request setHTTPMethod:@"POST"];
     [request setValue:postLength forHTTPHeaderField:@"Content-Length"];
     [request setValue:@"application/x-www-form-urlencoded" forHTTPHeaderField:@"Content-Type"];
@@ -112,7 +114,7 @@
                           options:kNilOptions
                           error:Nil];
 
-//    NSLog(@"users=%@", [[NSString alloc] initWithData:returnData encoding:NSUTF8StringEncoding]);
+    NSLog(@"post=%@", [[NSString alloc] initWithData:returnData encoding:NSUTF8StringEncoding]);
 
     
 //    NSString *success = [json objectForKey:@"success"];

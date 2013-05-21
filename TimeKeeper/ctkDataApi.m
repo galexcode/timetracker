@@ -13,11 +13,10 @@
 +(NSArray*)makeProjectsRequest
 {    
     NSMutableURLRequest *request = [[NSMutableURLRequest alloc] init];
-    [request setURL:[NSURL URLWithString:@"http://local.timesheets/index.php/api/get_projects"]];
+    [request setURL:[NSURL URLWithString:@"http://timesheets.chameleonstudios.co.uk/index.php/api/get_projects"]];
     [request setHTTPMethod:@"GET"];
-    
-    //keep adding your headers this way
-    
+    NSString *authValue = @"Basic Y2hhbWVsZW9uOnNEZD9ve1U7Z15rJg==";
+    [request setValue:authValue forHTTPHeaderField:@"Authorization"];
     NSString *accept = [NSString stringWithFormat:@"application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5"];
     
     [request addValue:accept forHTTPHeaderField: @"Accept"];
@@ -45,11 +44,9 @@
     NSMutableURLRequest *request = [[NSMutableURLRequest alloc] init];
     [request setURL:[NSURL URLWithString:@"http://local.timesheets/index.php/api/get_users"]];
     [request setHTTPMethod:@"GET"];
-    
-    //keep adding your headers this way
-    
+    NSString *authValue = @"Basic Y2hhbWVsZW9uOnNEZD9ve1U7Z15rJg==";
+    [request setValue:authValue forHTTPHeaderField:@"Authorization"];
     NSString *accept = [NSString stringWithFormat:@"application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5"];
-    
     [request addValue:accept forHTTPHeaderField: @"Accept"];
     
     //send request & get response
